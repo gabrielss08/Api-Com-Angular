@@ -1,0 +1,277 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+///////////////////NAVBAR//////////////////////
+header {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5%;
+  background: white;}
+.logo {
+  cursor: pointer;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+nav{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+.nav_links a, .cta{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.nav_links li {
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: color 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color: orange;
+}
+.cta {
+  padding: 9px 25px;
+  border: solid 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  margin: 5px;
+}
+.cta:hover {
+  background-color: orange;
+  border: none;
+  color: white;
+}
+///////////////////NAVBAR//////////////////////
+
+
+
+///////////////////BODY//////////////////////
+body{
+  position: relative;
+  background-image: url(https://www.petrosjundiai.com.br/wp-content/uploads/2020/10/Principais-desafios-na-gestão-de-um-posto-de-combustível.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+            ///////TABS//////
+.tabs {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background:transparent;
+  border-radius: 20px;
+  box-shadow:0 0 30px rgba(0,0,0,.5) ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  align-items: center;
+}
+.tabs_label {
+  width: 50px;
+  height: 25px;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 2s ease 4s;
+  color: white;
+  font-weight: bold;
+}
+.tabs_radio {
+  display: none;
+}
+.tabs_content {
+  order: 1;
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.tabs_radio:checked + .tabs_label {
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid #FA542F;
+}
+.tabs_radio:checked + .tabs_label + .tabs_content {
+  display: initial;
+}
+h2{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+a{
+  color: white;
+}
+.inputbox{
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color: #fff;
+}
+.inputbox ion-icon{
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+.forget{
+  margin: -15px 0 15px ;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget label input{
+  margin-right: 3px;
+
+}
+.forget label a{
+  color: #fff;
+  text-decoration: none;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+button{
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.register{
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.register p a:hover{
+  text-decoration: underline;
+}
+            ///////TABS//////
+///////////////////BODY//////////////////////
+
+
+
+///////////////////FOOTER//////////////////////
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: orange;
+  height: auto;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+  box-shadow:0 0 30px rgba(0,0,0,.5) ;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: #FA542F;
+}
+
+.footer-bottom{
+  background: black;
+  box-shadow:0 0 30px rgba(0,0,0,.5) ;
+  padding: 20px 0;
+  text-align: center;
+  justify-content: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+///////////////////FOOTER//////////////////////
